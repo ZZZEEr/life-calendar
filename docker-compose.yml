@@ -1,0 +1,9 @@
+services:
+  life-calendar:
+    image: life-calendar          # ← 改成这行！使用你上次已经 build 好的本地镜像
+    container_name: life-calendar
+    ports:
+      - "811:811"
+    volumes:
+      - ./persist:/app
+    restart: unless-stopped

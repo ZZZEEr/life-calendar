@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+emoji_cache/
+cached_wallpaper.png
+config.json
+persist/
+*.log
+background.jpg
