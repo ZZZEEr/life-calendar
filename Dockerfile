@@ -25,4 +25,4 @@ RUN mkdir -p emoji_cache user_data wallpaper_history
 EXPOSE 520
 
 # 生产级服务器，gzip 压缩，双 worker
-CMD ["gunicorn", "--bind", "0.0.0.0:811", "--workers", "2", "--gzip", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:520", "--workers", "2", "--gzip", "app:app"]
